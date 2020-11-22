@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+.number{
+	color: #64ffda;
+}
+
+body {
+ font-family: 'Lato', sans-serif;
+  color: #8892b0;
+  background-color: #0a192f;
+}
+
+.tc{
+	text-align: center;
+}
+
+form{
+	margin: 2rem 0;
+}
+
+form input{
+	padding: 1rem 0.76rem;
+	outline: none;
+}
+
+form button{
+	padding: 1rem 0.76rem;
+	outline: none;
+}
+
+
+
+.container {
+  display: flex;
+  height: 80vh;
+ /* border: 2px solid #64ffda;*/
+  box-shadow: 0 0 6px #303C55;
+  border-radius: 4px;
+  overflow: auto;
+  margin: 2rem 2rem;
+
+}
+
+.countries { 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 2rem;
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+.country {
+  background-color: #fff;
+  box-shadow: 0 2rem 5rem 1rem rgba(0, 0, 0, 0.1);
+  font-size: 1.8rem;
+  width: 30rem;
+  border-radius: 0.7rem;
+  margin: 2rem 1rem;
+  
+}
+
+.country__img {
+  width: 30rem;
+  height: 17rem;
+  object-fit: cover;
+  background-color: #eee;
+  border-top-left-radius: 0.7rem;
+  border-top-right-radius: 0.7rem;
+}
+
+.country__data {
+  padding: 2.5rem 3.75rem 3rem 3.75rem;
+}
+
+.country__name {
+  font-size: 1.7rem;
+}
+
+.country__region {
+  font-size: 1.4rem;
+  color: #888;
+}
+
+.country__row:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.country__row span {
+  display: inline-block;
+  margin-right: 2rem;
+  font-size: 2.4rem;
+}
+
+.btn-country {
+  border: none;
+  font-size: 2rem;
+  padding: 2rem 5rem;
+  border-radius: 0.7rem;
+  color: white;
+  background-color: orangered;
+  cursor: pointer;
+}
+
+.images {
+  display: flex;
+}
+
+.images img {
+  display: block;
+  width: 80rem;
+  margin: 4rem;
+}
+
+.images img.parallel {
+  width: 40rem;
+  margin: 2rem;
+  border: 3rem solid white;
+  box-shadow: 0 2rem 5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #64ffda; 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(255,0,0,0.4); 
+}
+
+.spinner{
+	margin: auto;
+	position: absolute;
+	top: 50%;
+	left:50%;
+}
+
+.display_none{
+	display: none;
+}
