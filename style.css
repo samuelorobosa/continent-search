@@ -63,15 +63,15 @@ form button{
   background-color: #fff;
   box-shadow: 0 2rem 5rem 1rem rgba(0, 0, 0, 0.1);
   font-size: 1.8rem;
-  width: 30rem;
+  width: 24rem;
   border-radius: 0.7rem;
   margin: 2rem 1rem;
   
 }
 
 .country__img {
-  width: 30rem;
-  height: 17rem;
+  width: 24rem;
+  height: 14rem;
   object-fit: cover;
   background-color: #eee;
   border-top-left-radius: 0.7rem;
@@ -79,7 +79,7 @@ form button{
 }
 
 .country__data {
-  padding: 2.5rem 3.75rem 3rem 3.75rem;
+  padding: 1.5rem 1.75rem 1rem 1.75rem;
 }
 
 .country__name {
@@ -98,12 +98,12 @@ form button{
 .country__row span {
   display: inline-block;
   margin-right: 2rem;
-  font-size: 2.4rem;
+  font-size: 1.3rem;
 }
 
 .btn-country {
   border: none;
-  font-size: 2rem;
+  font-size: 1.7rem;
   padding: 2rem 5rem;
   border-radius: 0.7rem;
   color: white;
