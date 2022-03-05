@@ -8,13 +8,13 @@ let countries = document.querySelector(".countries");
 ///////Show Country
 let showCountry = (nation) =>{
   let html = ` <article class="country">
-          <img class="country__img" src="${nation.flag}" />
+          <img class="country__img" src="${nation.flags.png}" />
           <div class="country__data">
-            <h3 class="country__name">${nation.name}</h3>
+            <h3 class="country__name">${nation.name.common}</h3>
             <h4 class="country__region">${nation.region}</h4>
             <p class="country__row"><span>👫</span>${nation.population}</p>
-            <p class="country__row"><span>🗣️</span>${nation.languages[0].name}</p>
-            <p class="country__row"><span>💰</span>${nation.currencies[0].name}</p>
+            <p class="country__row"><span>🗣️</span>${nation.languages[Object.keys(nation.languages)[0]]}</p>
+            <p class="country__row"><span>💰</span>${nation.currencies[Object.keys(nation.currencies)[0]].name}</p>
           </div>
         </article>`
 
@@ -25,7 +25,7 @@ let showCountry = (nation) =>{
 const getCountriesData = (region) =>{
 numberOfCountries.innerHTML = "";
   spinner.classList.toggle('display_none');
-		fetch(`https://restcountries.eu/rest/v2/region/${region}`)
+		fetch(`https://restcountries.com/v3.1/region/${region}`)
 		.then(response => {
 
       if(!response.ok) {
